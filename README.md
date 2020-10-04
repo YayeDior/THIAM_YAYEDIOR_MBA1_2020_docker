@@ -22,6 +22,7 @@ Définir bien l’ensemble des services dans votre docker-compose qui mettra en 
 Le tout devra être sur une base principale avec Alpine (Pas forcément Alpine : Non obligatoire)
 
 Projet:
+
 La partie  frontend de ce projet est codé avec RéactJs et la partie backend est codé avec nodejs Javascript.L'APIREST est relié à la partie backend et ce dernier est également relié à la base de données nosql MongoDB.
 
 Installation de MongoDB
