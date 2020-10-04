@@ -52,11 +52,17 @@ Bonus:
 Mettre à jour mon image sur le registry public:Pour cela,j'ai utilisé Dockerhub:
 Dockerhub permet de pouvoir partager son projet à travers des containers:Ici j'ai deux containers qui correspondent à mes parties backend et frontend.
 Les commandes qui m'ont permis de faire cette tache sont:
+
 docker login:connexion à Dockerhub
+
 docker tag aed1333b8f9b yayedior/projet_webservices_mds1_2020_backend:Back:récupérer l'ID de mon image 
+
 docker push yayedior/projet_webservices_mds1_2020_backend:pusher mon image backend
+
 docker tag d4b2e4e874ce  yayedior/projet_webservices_mds1_2020_frontend:Récuperer l'ID de mon image
+
 docker push yayedior/projet_webservices_mds1_2020_frontend:pusher mon image frontend
+
 De ce fait,mon projet est présent sur dockerhub avec la présence de deux containers.
 
 Ci dessous le lien de mon image sur Dockerhub
