@@ -33,22 +33,32 @@ Mon  projet comporte deux fichiers Dockerfile(Dockerfile Backend et Dockerfile F
 Les fichiers Dockerfile m'ont permis de builder mes images:j'ai utilisé les commandes suivantes pour les deux parties:Backend et Front end :
 
 backend:
+
 docker build -t backend .:builder mon image backend
+
 docker images:Pour voir si mon image a été bien ajouté
+
 docker run -p 8080:8080 backend:runner mon container sur la base de mon image backend à travers mon localhost:8080
+
 docker ps -a
 
 Front end:
+
 docker build -t frontend .:builder mon image frontend
+
 docker run -p 3000:3000 frontend:runner mon container sur la base de mon image frontend à travers mon localhost:3000
+
 docker ps -a
 
 Docker-compose.yml:
+
 Ce fichier m'a permis de démarrer mes deux containers dans le meme docker:
 La commande que j'ai utilisé est la suivante:
+
 docker-compose up --build:cette commande m'a permis de démarrer en meme temps MongoDB,ma partie front end et ma partie backend.
 
 Bonus:
+
 Mettre à jour mon image sur le registry public:Pour cela,j'ai utilisé Dockerhub:
 Dockerhub permet de pouvoir partager son projet à travers des containers:Ici j'ai deux containers qui correspondent à mes parties backend et frontend.
 Les commandes qui m'ont permis de faire cette tache sont:
